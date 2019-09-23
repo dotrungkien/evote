@@ -3,7 +3,7 @@
   "appAdmin": "admin",
   "appAdminSecret": "adminpw",
   "orgMSPID": "Org1MSP",
-  "caName": "ca.org1.example.com",
+  "caName": "http://localhost:17054",
   "userName": "V1",
   "gatewayDiscovery": { "enabled": true, "asLocalhost": true }
 }

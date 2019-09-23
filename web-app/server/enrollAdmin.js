@@ -27,13 +27,12 @@ let caName = config.caName;
 
 async function main() {
   try {
-
     // Create a new CA client for interacting with the CA.
     const caURL = caName;
+    console.log(caURL)
     const ca = new FabricCAServices(caURL);
-
     // Create a new file system based wallet for managing identities.
-    const walletPath = path.join(process.cwd(), 'wallet');
+    const walletPath = path.join(process.cwd(), 'local_fabric_wallet');
     const wallet = new FileSystemWallet(walletPath);
     console.log(`Wallet path: ${walletPath}`);
 

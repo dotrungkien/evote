@@ -28,7 +28,7 @@ exports.connectToNetwork = async function (userName) {
   const gateway = new Gateway();
 
   try {
-    const walletPath = path.join(process.cwd(), 'wallet');
+    const walletPath = path.join(process.cwd(), 'local_fabric_wallet');
     const wallet = new FileSystemWallet(walletPath);
     console.log(`Wallet path: ${walletPath}`);
     console.log('userName: ');
@@ -175,7 +175,7 @@ exports.registerVoter = async function (voterId, registrarId, firstName, lastNam
   try {
 
     // Create a new file system based wallet for managing identities.
-    const walletPath = path.join(process.cwd(), 'wallet');
+    const walletPath = path.join(process.cwd(), 'local_fabric_wallet');
     const wallet = new FileSystemWallet(walletPath);
     console.log(`Wallet path: ${walletPath}`);
     console.log(wallet);
